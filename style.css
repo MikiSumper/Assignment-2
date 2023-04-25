@@ -1,0 +1,95 @@
+#wrapper {
+    position: relative;
+    margin: 200px auto;
+    width: 620px;
+    height: 480px;
+    background-color: #050210;
+}
+
+#circle-1 {
+    position: absolute;
+    top: 70px;
+    left: 161px;
+    width: 340px;
+    height: 340px;
+    border-radius: 100%;
+    background: linear-gradient(#fb5dad, #55fb9f, #b97aff);
+    filter: blur(20px);
+    animation-name: animation-1;
+    animation-duration: 1s;
+    animation-play-state: running;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    opacity: 50%;
+
+}
+
+#circle-2 {
+    position: absolute;
+    top: 91px;
+    left: 182px;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    background: linear-gradient(#fb5dad, #55fb9f, #b97aff);
+    animation-name: animation-2;
+    animation-duration: 1s;
+    animation-play-state: running;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+#circle-3 {
+    position: absolute;
+    top: 91px;
+    left: 182px;
+    width: 300px;
+    height: 300px;
+    transform: scale(0.85);
+    border-radius: 100%;
+    background-color: #050116;
+
+}
+#circle-4 {
+    position: absolute;
+    top: 215px;
+    left: 309px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: #0c091d;
+    opacity: 80%;
+    animation-name: animation-3;
+    animation-duration: 1.4s;
+    animation-play-state: running;
+    animation-timing-function:cubic-bezier(0.45, 0.17, 0.34, 0.62);
+    animation-iteration-count: infinite;
+    filter: blur(0.7px);
+}
+
+
+@keyframes animation-1 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animation-2 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animation-3 {
+    0% {
+        transform: scale(0.5);
+    }
+    100% {
+        transform: scale(5);
+    }
+}
